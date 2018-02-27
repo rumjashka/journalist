@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="admin">
+    <div class="inside-block-admin">
+            <span class="contact-title-admin">Admin access</span>
+        <div class="column-admin">
+            <form action="{{ url_for('admin') }}" method="post">
+                <input class="access-column" name="login" placeholder="Login"/>
+                <input class="access-column" type="password" name="password" placeholder="Password"/>
+                <input class="access-button" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}

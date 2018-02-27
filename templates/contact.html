@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="contact">
+    <div class="inside-block">
+        <div class="text-block">
+            <span class="contact-description">For questions, inquiries, or generally favorable conversation, send me an email by using this form.</span>
+            <span class="contact-title">Contact</span>
+        </div>
+        <div class="column-main">
+            <form action="{{ url_for('contact') }}" method="post">
+                <input class="contact-column" name="name" placeholder="Name"/>
+                <input class="contact-column" name="email" placeholder="Email"/>
+                <input class="contact-column" name="theme" placeholder="Theme"/>
+                <textarea class="contact-column" rows="8" cols="20" name="question" placeholder="Question"></textarea>
+                <input class="contact-button" type="submit" value="Submit"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}

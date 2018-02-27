@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="message">
+    <a href="/messages" style="text-decoration: none">Read my messages</a>
+    <br>
+    <a href="/list" style="text-decoration: none">View my posts list</a>
+</div>
+<header class="post-block" style="padding: 0 16px">
+    <h1 class="post-question">Want to add new post?</h1>
+    <button class="upload-button" onclick="myFunction()">Upload photo</button>
+    <div class="container">
+        <form id="upload_form" enctype="multipart/form-data" action="{{url_for('add_post')}}" method="post">
+            <input type="text" class="form-control" name="title" placeholder="Title" aria-describedby="basic-addon3">
+            <div id="upload_photo"></div>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="description"
+                      placeholder="Description"></textarea>
+
+
+        </form>
+    </div>
+</header>
+<script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "file");
+    x.setAttribute("id", "upload_input");
+    x.setAttribute("name", "file");
+    document.getElementById('upload_photo').appendChild(x);
+    document.getElementById("upload_input").onchange = function() {
+        document.getElementById("upload_form").submit();
+    }
+
+}
+
+</script>
+
+{%endblock%}

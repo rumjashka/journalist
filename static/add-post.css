@@ -1,0 +1,62 @@
+.post-block{
+margin: 0 auto;
+display:flex;
+flex-direction:row;
+align-self: flex-start;
+justify-content: space-between;
+align-items: center;
+max-width:1000px;
+line-height: 300%;
+}
+
+
+.upload-button{
+color: #FFFFFF;
+background-color: rgb(27,29,30);
+font-size: 15px;
+display: flex;
+justify-content:center;
+border:1px solid;
+padding:15px;
+margin: 5px;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding: 50px;
+}
+
+
+.form-control{
+color: #000000;
+font-size: 12pt;
+display: flex;
+flex-direction: column;
+width: 390px;
+height:auto;
+border:1px solid #B0B0B0;
+padding:15px;
+margin: 5px;
+}
+
+.message{
+padding: 50px;
+text-align: center;
+font-size: 25px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.edit-form{
+color: #000000;
+font-family: 'Montserrat', sans-serif;
+font-size: 12pt;
+display: flex;
+flex-direction: column;
+width: 900px;
+height:400px;
+border:1px solid #B0B0B0;
+padding:15px;
+margin: 5px;
+}

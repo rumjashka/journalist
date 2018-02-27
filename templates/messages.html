@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="messages">
+    <table class="message-block">
+        <tr>
+            <th class="message-header">Name</th>
+            <th class="message-header">Email</th>
+            <th class="message-header">Theme</th>
+            <th class="message-header">Question</th>
+        </tr>
+        {%for message in messages%}
+        <tr>
+            <td class="message-column">{{message.name}}</td>
+            <td class="message-column">{{message.email}}</td>
+            <td class="message-column">{{message.theme}}</td>
+            <td class="message-column">{{message.question}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+
+
+
+{%endblock%}

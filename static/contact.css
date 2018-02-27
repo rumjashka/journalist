@@ -1,0 +1,104 @@
+.contact{
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16), 0 0 10px 0 rgba(0, 0, 0, 0.12);
+background-color:#FFFFFF;
+width:1025px;
+height: 540px;
+margin: 60px 200px;
+}
+
+.inside-block{
+margin: 0 auto;
+display:flex;
+flex-direction:row;
+align-self: flex-start;
+justify-content: space-between;
+align-items: center;
+max-width:1000px;
+line-height: 300%;
+}
+
+.text-block{
+align-self: flex-start;
+display: flex;
+flex-direction: column-reverse;
+justify-content:center;
+padding: 40px 30px;
+}
+
+.contact-title{
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+rgb(27,29,30);
+font-weight: 400;
+letter-spacing:0.05em;
+padding: 20px 20px;
+}
+
+.contact-description{
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+padding: 0px 20px;
+}
+
+.column-main{
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding: 50px;
+}
+
+.contact-column{
+color: #000000;
+font-size: 12pt;
+display: flex;
+flex-direction: column;
+width: 390px;
+height:10px;
+border:1px solid #B0B0B0;
+padding:15px;
+margin: 5px;
+
+}
+
+textarea.contact-column{
+height:200px;
+}
+
+.contact-button{
+color: #FFFFFF;
+background-color: rgb(27,29,30);
+font-size: 15px;
+display: flex;
+justify-content:center;
+border:1px solid;
+padding:15px;
+margin: 5px;
+}
+
+.photo{
+padding:30px 30px;
+}
+
+.messages{
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16), 0 0 10px 0 rgba(0, 0, 0, 0.12);
+background-color:#FFFFFF;
+width:1025px;
+height: 540px;
+margin: 60px 200px;
+}
+
+.message-block{
+width:100%;
+padding: 20px;
+}
+
+.message-header{
+text-align:left;
+padding:15px;
+}
+
+.message-column{
+color: #000000;
+font-size: 12pt;
+padding:15px;
+}

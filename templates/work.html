@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="works">
+    <div class="inside-works">
+        <div class="date">{{filename.datetime.strftime('%d %B %Y')}}
+        </div>
+        <div class="work-title">
+            {{filename.title}}
+        </div>
+        <img class="work-photo" src="{{filename.file}}" alt="Amsterdam">
+        <div class="work-text">{{filename.description}}</div>
+    </div>
+</div>
+
+
+{%endblock%}

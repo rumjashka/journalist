@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="works">
+    <div class="inside-works">
+        <div class="date">{{filename.datetime.strftime('%d %B %Y')}}
+        </div>
+        <div class="work-title">
+            {{filename.title}}
+        </div>
+        <img class="work-photo" src="{{filename.file}}" alt="Amsterdam">
+        <form action="{{ url_for('edit', _id=post_id) }}" method="post">
+        <textarea class="edit-form" id="exampleFormControlTextarea1" name="description"
+                  placeholder="Description">
+        {{filename.description}}
+        </textarea>
+            <div class="edit-button">
+
+                <input type="hidden" name="id" value="{{post_id}}">
+                <input class="contact-button" type="submit" value="EDIT"/>
+                <a class="back-btn" href="/list" style="text-decoration: none">BACK</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{%endblock%}
